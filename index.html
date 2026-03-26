@@ -3,54 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predelios</title>
+    <title>Predelios - Your Productivity Engine</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Predelios</div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero">
-        <h1>Welcome to Predelios</h1>
-        <p>Your ultimate solution for enhanced productivity.</p>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Predelios</h1>
+            <p class="tagline">Your productivity engine</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary">Get Started</button>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-content">
+            <h2>About Us</h2>
+            <p>At Predelios, we provide the best services to ensure your success. Our dedicated team works tirelessly to meet your needs and drive your productivity to new heights.</p>
+        </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features">
-        <h2>Features</h2>
-        <ul>
-            <li>Feature 1</li>
-            <li>Feature 2</li>
-            <li>Feature 3</li>
-        </ul>
+    <section id="features" class="features">
+        <div class="section-content">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Analytics</h3>
+                    <p>Track your progress with detailed analytics and insights.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Performance</h3>
+                    <p>Lightning-fast performance optimized for productivity.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Security</h3>
+                    <p>Enterprise-grade security to protect your data.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Integration</h3>
+                    <p>Seamless integration with your favorite tools.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>Innovation</h3>
+                    <p>Cutting-edge features to keep you ahead.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Collaboration</h3>
+                    <p>Work together seamlessly with your team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-content">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Consulting</h3>
+                    <p>Expert guidance tailored to your needs</p>
+                </div>
+                <div class="service-item">
+                    <h3>Development</h3>
+                    <p>Custom solutions built for your success</p>
+                </div>
+                <div class="service-item">
+                    <h3>Support</h3>
+                    <p>24/7 dedicated support team</p>
+                </div>
+                <div class="service-item">
+                    <h3>Design</h3>
+                    <p>Beautiful and intuitive user experiences</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing">
-        <h2>Pricing</h2>
-        <p>Choose a plan that works for you.</p>
+    <section id="pricing" class="pricing">
+        <div class="section-content">
+            <h2>Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Free</h3>
+                    <p class="price">$0<span>/month</span></p>
+                    <ul class="pricing-features">
+                        <li>✓ Basic features</li>
+                        <li>✓ Limited storage</li>
+                        <li>✓ Community support</li>
+                    </ul>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">Popular</div>
+                    <h3>Pro</h3>
+                    <p class="price">$29<span>/month</span></p>
+                    <ul class="pricing-features">
+                        <li>✓ All Free features</li>
+                        <li>✓ Unlimited storage</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Advanced analytics</li>
+                    </ul>
+                    <button class="btn btn-primary">Subscribe Now</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <p class="price">Custom</p>
+                    <ul class="pricing-features">
+                        <li>✓ All Pro features</li>
+                        <li>✓ Custom integrations</li>
+                        <li>✓ Dedicated support</li>
+                        <li>✓ SLA guarantee</li>
+                    </ul>
+                    <button class="btn btn-outline">Contact Sales</button>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact Form -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <input type="submit" value="Submit">
-        </form>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-content">
+            <h2>What Users Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Predelios has transformed the way we work. It's intuitive and powerful!"</p>
+                    <p class="testimonial-author">- John Doe, CEO</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The best productivity tool we've ever used. Highly recommended!"</p>
+                    <p class="testimonial-author">- Jane Smith, Project Manager</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Excellent support and amazing features. Worth every penny!"</p>
+                    <p class="testimonial-author">- Mike Johnson, Developer</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-content">
+            <h2>Get in Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Predelios</h4>
+                <p>Your productivity engine</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Predelios. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
